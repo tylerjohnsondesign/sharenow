@@ -3,7 +3,7 @@
 Plugin Name: Share Now
 Plugin URI: https://tylerjohnsondesign.com
 Description: Smart social share buttons for sites.
-Version: 1.0.0
+Version: 1.0.1
 Author: Tyler Johnson
 Author URI: https://tylerjohnsondesign.com
 Copyright: Tyler Johnson
@@ -19,7 +19,7 @@ if( !defined( 'WPINC' ) ) { die; }
 /**
 Constants.
 **/
-define( 'SHARENOW_VERSION', '1.0.0' );
+define( 'SHARENOW_VERSION', '1.0.1' );
 define( 'SHARENOW_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'SHARENOW_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 
