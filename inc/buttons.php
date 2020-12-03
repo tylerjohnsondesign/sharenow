@@ -17,6 +17,7 @@ function sharenow_create_buttons( $id ) {
 
     // Set variables.
     $link       = get_permalink( $id );
+    $short      = wp_get_shortlink( $id );
     $title      = get_the_title( $id );
 
     // Get buttons.
