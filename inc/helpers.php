@@ -30,7 +30,7 @@ Button options.
 function sharenow_button_options() {
 
     // Set array.
-    $buttons = [ 'parler', 'facebook', 'twitter', 'pinterest', 'flipboard', 'email', 'print' ];
+    $buttons = [ 'parler', 'facebook', 'twitter', 'gab', 'pinterest', 'flipboard', 'email', 'print' ];
 
     // Return.
     return $buttons;
