@@ -37,6 +37,11 @@ function sharenow_page_contents() {
     // Set blank Twitter.
     $twitter = '';
 
+    // Set default.
+    $active_buttons     = '';
+    $active_locations   = '';
+    $twitter            = '';
+
     // Get options.
     if( !empty( get_option( 'sharenow-buttons' ) ) ) {
 
@@ -82,7 +87,7 @@ function sharenow_page_contents() {
                             $checked = '';
 
                             // Check for checked.
-                            if( in_array( $button, $active_buttons ) ) {
+                            if( is_array( $active_buttons ) && in_array( $button, $active_buttons ) ) {
 
                                 // Set checked.
                                 $checked = ' checked';
@@ -112,7 +117,7 @@ function sharenow_page_contents() {
                         $checked = '';
 
                         // Check for checked.
-                        if( in_array( $location, $active_locations ) ) {
+                        if( is_array( $active_locations ) && in_array( $location, $active_locations ) ) {
 
                             // Set checked.
                             $checked = ' checked';
